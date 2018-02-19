@@ -1,15 +1,7 @@
 var angular = require('angular');
-
-// Patternfly deps
-require('jquery');
-require('patternfly');
 require('angular-route');
-require('angular-patternfly');
 
 var app = angular.module('PfHelloWorldApp', [
-    'patterfly',
-    'patternfly.charts',
-    'patternfly.table',
     'ngRoute',    
 ]);
 module.exports = app;

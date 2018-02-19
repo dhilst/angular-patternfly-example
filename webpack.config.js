@@ -23,8 +23,8 @@ module.exports = {
     ],
     resolve: {
         alias: {
-            "jquery": "patternfly/node_modules/jquery",
-            "angular": "angular-patternfly/node_modules/angular",
+            "jquery": path.resolve(__dirname, "node_modules/angular-patternfly/node_modules/patternfly/node_modules/jquery/dist/jquery.min.js"),
+            "patternfly": "angular-patternfly/node_modules/patterfly",
         }
     },
 }

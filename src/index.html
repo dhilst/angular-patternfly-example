@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html ng-app='PfHelloWorldApp'>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+
+    <!-- Webpack bundle -->
+    <script src="bundle.js" type="text/javascript"></script>
+    
+    <!-- Patternfly Angular datatables dependency -->
+    <!-- Place before any patternfly css -->
+    <link rel="stylesheet" href="node_modules/angular-patternfly/node_modules/datatables.net-dt/css/jquery.dataTables.css" />
+
+    <!-- PatternFly Styles -->
+    <!-- Note: No other CSS files are needed regardless of what other JS packages located in patternfly/components that you decide to pull in -->
+    <link rel="stylesheet" href="node_modules/angular-patternfly/node_modules/patternfly/dist/css/patternfly.min.css">
+    <link rel="stylesheet" href="node_modules/angular-patternfly/node_modules/patternfly/dist/css/patternfly-additions.min.css">
+
+    <!-- Patternfly required settings (no jquery or further JS dependencies required by this include) -->
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/dist/js/patternfly-settings.min.js"></script>
+
+    <!-- Angular-PatternFly Styles -->
+    <link rel="stylesheet" href="node_modules/angular-patternfly/dist/styles/angular-patternfly.min.css" />
+    
+    <!-- Angular, imported by webpack -->
+    <!-- <script src="node_modules/angular-patternfly/node_modules/angular/angular.min.js"></script> -->
+
+    <!-- Bootstrap-Select (Optional): The following lines are only required if you use the pfBootstrapSelect directive -->
+    <script src="node_modules/angular-patternfly/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Angular-Bootstrap -->
+    <script src="node_modules/angular-patternfly/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+    <!-- Angular-Sanitize -->
+    <script src="node_modules/angular-patternfly/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- Angular-PatternFly  -->
+    <script src="node_modules/angular-patternfly/dist/angular-patternfly.min.js"></script>
+
+    <!-- Lodash -->
+    <script src="node_modules/angular-patternfly/node_modules/lodash/lodash.min.js"></script>
+
+    <!-- C3, D3 - Charting Libraries. -->
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/node_modules/c3/c3.min.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/node_modules/d3/d3.min.js"></script>
+
+    <!-- Patternfly AngularJS datatables -->
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/patternfly/node_modules/datatables.net-select/js/dataTables.select.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/angularjs-datatables/dist/angular-datatables.min.js"></script>
+    <script src="node_modules/angular-patternfly/node_modules/angularjs-datatables/dist/plugins/select/angular-datatables.select.min.js"></script>
+
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="#/view1">View 1</a>
+    <a href="#/view2">View 2</a>
+    <div ng-view></div> 
+  </body>
+</html>
